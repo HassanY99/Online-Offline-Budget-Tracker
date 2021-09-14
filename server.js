@@ -20,7 +20,6 @@ app.use(require("./routes/api.js"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useNewUrlParser: true,
-  useFindAndModify: false,
 });
 
 app.listen(PORT, () => {
